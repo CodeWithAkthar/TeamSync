@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev":"ts-node-dev --files src/index.ts",
-    "build":"tsc && cp /package.json ./dist",
-    "start": "node dist/index.ts"
+    "dev": "ts-node-dev --files src/index.ts",
+    "build": "tsc && cp /package.json ./dist",
+    "start": "node dist/index.ts",
+    "seed": "ts-node src/seeders/role.seeder.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "mongoose": "^8.9.6",
     "passport": "^0.7.0",
     "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "typescript": "^5.7.3",
     "uuid": "^11.0.5",
@@ -34,6 +36,7 @@
     "@types/mongoose": "^5.11.96",
     "@types/passport": "^1.0.17",
     "@types/passport-google-oauth": "^1.0.45",
+    "@types/passport-google-oauth20": "^2.0.16",
     "@types/passport-local": "^1.0.38",
     "@types/uuid": "^10.0.0",
     "ts-node-dev": "^2.0.0"
